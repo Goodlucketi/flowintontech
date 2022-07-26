@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+main ul{
+    list-style: none;
+}
+.abt-nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #01092b;
+    position: sticky;
+    top: 110px;
+    left: 0;
+    z-index: 10;
+}
+.abt-nav li{
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+    color: #f5f5f5;
+    transition: 1s;
+    border-bottom: 2px groove whitesmoke;
+}
+.abt-nav li:hover{
+    background: #f5f5f5;
+    color: #01092b;
+}
+.about{
+    margin: 0 auto;
+    background: rgb(8, 8, 8);
+    position: relative;
+}
+
+.abt{
+    padding: 0 10px 0 0;
+    margin: 0 auto;
+}
+.abtt{
+    margin:10px auto 40px;
+    box-shadow: 0 0 10px 3px gainsboro;
+    padding: 30px;
+    text-align: justify;
+}
+
+.about img{
+    height: 80vh;
+    opacity: .3;
+}
+.abt-text{
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
+    color: #f5f5f5;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.abt-text p{
+    font-size: 15px;;
+
+}
+.vision{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.vision>div{
+    margin:40px 10px;
+    box-shadow: 0 0 5px gainsboro;
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+}
+.vision p{
+    position: absolute;
+    background: rgba(4, 2, 37, 0.5);
+    color: #f5f5f5;
+    text-shadow: 0 0 5px black;
+    padding: 10px;
+    text-align: center;
+    bottom: 3%;
+    left: 0;
+    font-size: medium;
+    width: 100%;
+    border-radius:0 0 20px 20px;
+}
+.executives,.ministers{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px 2px lightgray;
+    margin: 10px auto 30px;
+    padding: 10px;
+}
+.executives>div,.ministers>div{
+    margin: 15px auto;
+    box-shadow: 1px 1px 10px 3px rgb(187, 184, 184);
+    border-radius: 50% 50% 20px 20px;
+}
+.lead-title{
+    text-align: center;
+    padding: 20px;
+    font-size: larger;
+}
+.exec>div,.min>div{
+    text-align: center;
+    margin: 15px auto;
+}
+.exec>img{
+    border-radius: 50%;
+    height: 250px;
+    border: 7px inset goldenrod;
+}
+.min>img{
+    border-radius: 50%;
+    height: 200px;
+    border: 7px inset goldenrod;
+}
+.pst>img{
+    height: 280px;
+    border: 10px outset goldenrod;
+}
+.list{
+    margin: auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.list>li{
+    text-align: center;
+    padding: 10px;
+    margin:12px;
+    box-shadow: 0 0 5px 3px rgb(196, 191, 191);
+    transition: 1s;
+    font-size: larger;
+}
+.list>li:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+.col-1{width:8.33%}
+.col-2{width:16.66%}
+.col-3{width:25%}
+.col-4{width:33.33%}
+.col-5{width:41.66%}
+.col-6{width:50%}
+.col-7{width:58.33%}
+.col-8{width:66.66%}
+.col-9{width:75%}
+.col-10{width:83.33%}
+.col-11{width:91.66%}
+.col-12{width:100%}
+
+
+@media screen and (max-width:900px) {
+   
+    .abt-text{
+        position: absolute;
+        bottom: 30%;
+        left: 20%;
+        color: #f5f5f5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    .abt-nav{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background: #01092b;
+        position: sticky;
+        top: 80px;
+        left: 0;
+        z-index: 10;
+    }
+    .col-m1{width:8.33%}
+    .col-m2{width:16.66%}
+    .col-m3{width:25%}
+    .col-m4{width:33.33%}
+    .col-m5{width:41.66%}
+    .col-m6{width:50%}
+    .col-m7{width:58.33%}
+    .col-m8{width:66.66%}
+    .col-m9{width:75%}
+    .col-m10{width:83.33%}
+    .col-m11{width:91.66%}
+    .col-m12{width:100%}
+}
+
+@media screen and (max-width:600px) {
+    
+    .abt-text{
+        position: absolute;
+        bottom: 40%;
+        left: 5%;
+        color: #f5f5f5;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    .abt-nav{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        background: #01092b;
+        position: sticky;
+        top: 70px;
+        left: 0;
+        z-index: 10;
+    }
+
+    .col-sm1{width:8.33%}
+    .col-sm2{width:16.66%}
+    .col-sm3{width:25%}
+    .col-sm4{width:33.33%}
+    .col-sm5{width:41.66%}
+    .col-sm6{width:50%}
+    .col-sm7{width:58.33%}
+    .col-sm8{width:66.66%}
+    .col-sm9{width:75%}
+    .col-sm10{width:83.33%}
+    .col-sm11{width:91.66%}
+    .col-sm12{width:100%}
+    
+}
